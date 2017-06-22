@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sparken02.layoutpractice.FrameLayoutDemo">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/home">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/pauul"
+            app:civ_border_color="#FF000000"
+            app:civ_border_width="2dp"
+            android:layout_marginBottom="40dp"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:id="@+id/textView24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#FFFFFF"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:layout_marginTop="30dp"
+            android:textSize="20dp"
+            android:text="Ajay" />
+
+        <TextView
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:text="9876543210"
+            android:background="#FFFFFF"
+            android:layout_gravity="center"
+            android:layout_marginTop="60dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+        />
+
+
+    </FrameLayout>
+    <FrameLayout
+        android:paddingBottom="20dp"
+        android:layout_marginTop="190dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f5f1f1"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+
+        >
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="25dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:text="FirstName"
+                android:textSize="20dp"
+                />
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:text="LastName"
+                android:layout_marginTop="60dp"
+                android:textSize="20dp"
+                />
+            <TextView
+                android:textSize="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:text="Address"
+                android:layout_marginTop="95dp"
+                />
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:text="Phone"
+                android:layout_marginTop="130dp"
+                android:textSize="20dp"
+                />
+            <TextView
+                android:textSize="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:text="Email"
+                android:layout_marginTop="165dp"
+                />
+        </FrameLayout>
+        <FrameLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="120dp">
+            <TextView
+                android:textSize="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ajay Chauhan"
+                android:layout_marginTop="25dp"
+                android:singleLine="true"
+                android:ellipsize="end"
+                />
+            <TextView
+                android:textSize="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jaybhai Chauhan"
+                android:layout_marginTop="60dp"
+                android:singleLine="true"
+                android:ellipsize="end"
+                />
+            <TextView
+                android:textSize="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ahmedabadad, Gandhinagar"
+                android:layout_marginTop="95dp"
+                android:singleLine="true"
+                android:ellipsize="end"
+                />
+            <TextView
+                android:textSize="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="9876543210"
+                android:layout_marginTop="130dp"
+                android:singleLine="true"
+                android:ellipsize="end"
+                />
+            <TextView
+                android:textSize="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="hello@gmail.com"
+                android:layout_marginTop="165dp"
+                android:singleLine="true"
+                android:ellipsize="end"
+                />
+        </FrameLayout>
+
+
+
+    </FrameLayout>
+
+    <Button
+        android:onClick="nextCoordinate"
+        android:textSize="30dp"
+        android:padding="10dp"
+        android:text="Submit"
+        android:textColor="#ffffff"
+        android:layout_marginBottom="20dp"
+        android:background="@color/colorPrimary"
+        android:layout_gravity="bottom|center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+</FrameLayout>

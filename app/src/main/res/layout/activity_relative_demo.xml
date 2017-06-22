@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sparken02.layoutpractice.RelativeDemo">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/home"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/relativeLayout">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/pauul"
+            app:civ_border_color="#FF000000"
+            app:civ_border_width="2dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignLeft="@+id/textView2"
+            android:layout_alignStart="@+id/textView2" />
+        <TextView
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:layout_marginTop="13dp"
+            android:background="#FFFFFF"
+            android:text="Ajay"
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView"
+            android:layout_below="@+id/profile_image"
+            android:layout_centerHorizontal="true" />
+        <TextView
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:background="#FFFFFF"
+            android:text="9876543210"
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView2"
+            android:layout_marginTop="12dp"
+            android:layout_below="@+id/textView"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:background="#e1e6e6"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="-10dp"
+        android:layout_marginRight="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:paddingBottom="10dp"
+        android:id="@+id/relativeLayout2">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:text="FirstName"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LastName"
+            android:textSize="20dp"
+            android:layout_below="@+id/textView4"
+            android:layout_alignLeft="@+id/textView4"
+            android:layout_alignStart="@+id/textView4"
+            android:layout_marginTop="18dp" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:textSize="20dp"
+            android:layout_marginTop="26dp"
+            android:layout_below="@+id/textView8"
+            android:layout_alignLeft="@+id/textView8"
+            android:layout_alignStart="@+id/textView8" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView7"
+            android:layout_alignStart="@+id/textView7"
+            android:layout_below="@+id/textView7"
+            android:layout_marginTop="27dp"
+            android:text="Phone"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView3"
+            android:layout_alignStart="@+id/textView3"
+            android:layout_below="@+id/textView3"
+            android:layout_marginTop="27dp"
+            android:text="Address"
+            android:textSize="20dp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:text="hello@gmial.com"
+            android:textSize="20dp"
+            android:layout_alignBaseline="@+id/textView5"
+            android:layout_alignBottom="@+id/textView5"
+            android:layout_alignLeft="@+id/textView14"
+            android:layout_alignStart="@+id/textView14" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/textView5"
+            android:layout_alignLeft="@+id/textView13"
+            android:layout_alignStart="@+id/textView13"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="9876543210"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView7"
+            android:layout_alignBottom="@+id/textView7"
+            android:layout_alignLeft="@+id/textView12"
+            android:layout_alignStart="@+id/textView12"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="Ahmedabad, Gujarat"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView3"
+            android:layout_alignBottom="@+id/textView3"
+            android:layout_alignLeft="@+id/textView11"
+            android:layout_alignStart="@+id/textView11"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="Jaybhai Chauhan"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/textView3"
+            android:layout_marginLeft="41dp"
+            android:layout_marginStart="41dp"
+            android:layout_toEndOf="@+id/textView4"
+            android:layout_toRightOf="@+id/textView4"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="Ajay Chauhan"
+            android:textSize="20dp" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:padding="10dp"
+        android:textSize="30dp"
+        android:textColor="#FFFFFF"
+        android:background="@color/colorPrimary"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
